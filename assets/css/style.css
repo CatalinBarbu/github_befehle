@@ -27,7 +27,7 @@ h2 {
   padding: 100px 50px;
   margin: 10px auto;
   box-shadow: 0 0 15px 15px purple;
-  transition: 2s;
+  transition: all 2s;
 }
 .headerSection {
   font-size: 95px;
@@ -59,8 +59,8 @@ main div {
 }
 .gitInit a {
   color: white;
-  font-size: 35px;
-  border: 2px solid #61045f;
+  font-size: 15px;
+  border: 1px solid #61045f;
   border-radius: 15px;
   padding: 10px 40px;
   background: linear-gradient(#aa076b, #61045f);
