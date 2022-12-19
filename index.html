@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Befehle</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="headerSection">
+        <div>
+          <a>GitHub Befehle</a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="gitInit">
+        <h2>Neues Projekt</h2>
+        <div>
+        <a>git init</a>
+    </div>
+        <p><b>What Does git init Do?</b><br>
+            Git init is one way to start a new project with Git. To start a repository, use either git init or git clone - not both.
+            
+            To initialize a repository, Git creates a hidden directory called .git. That directory stores all of the objects and refs that Git uses and creates as a part of your project's history. This hidden .git directory is what separates a regular directory from a Git repository.
+            
+            How to Use git init
+            Common usages and options for git init
+            git init: Transform the current directory into a Git repository
+            git init <directory>: Transform a directory in the current path into a Git repository
+            git init --bare: Create a new bare repository (a repository to be used as a remote repository only, that won't contain active development)
+            You can see all of the options with git init in git-scm's documentation.</p>
+      </section>
+      <section class="gitAdd">
+        <div>
+        <a>git add</a>
+     </div>
+        <p><b>What Does Git Add Do?</b><br>
+            Git add [filename] selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.
+            
+            This means if you git add a deleted file the deletion is staged for commit. The language of "add" when you're actually "deleting" can be confusing. If you think or use git stage in place of git add, the reality of what is happening may be more clear.
+            
+            git add and git commit go together hand in hand. They don't work when they aren't used together. And, they both work best when used thinking of their joint functionality.</p>
+      </section>
+      <section class="gitCommit">
+        <div>
+            <a>git commit</a>
+        </div>
+        <p><b>What Does git commit Do?</b><br>Git commit creates a commit, which is like a snapshot of your repository. These commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.</p>
+      </section>
+      <section class="gitInit">
+        <h2>Bestehendem Projekt</h2>
+        <div>
+        <a>git push</a>
+    </div>
+   <p><b>What Does git push Do?</b><br>
+   Git push updates the remote branch with local commits. It is one of the four commands in Git that prompts interaction with the remote repository. You can also think of git push as update or publish.
+   
+   By default, git push only updates the corresponding branch on the remote. So, if you are checked out to the main branch when you execute git push, then only the main branch will be updated. It's always a good idea to use git status to see what branch you are on before pushing to the remote.</p>
+    </main>
+  </body>
+</html>
