@@ -6,6 +6,22 @@
   font-family: "Indie Flower";
   src: url(../fonts/Indie_Flower/IndieFlower-Regular.ttf);
 }
+@keyframes headerAnimation {
+  0% {
+    color: white;
+    height: 0;
+    font-size: 0;
+    padding: 0 50px;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
+    padding: 100px 50px;
+    font-size: 95px;
+  }
+}
 p {
   font-family: "Indie Flower";
   font-size: 20px;
@@ -20,22 +36,20 @@ h2 {
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .headerSection {
   background: linear-gradient(#aa076b, #61045f);
-  text-align: left;
-  padding: 100px 50px;
-  margin: 10px auto;
-  box-shadow: 0 0 15px 15px purple;
-  transition: all 2s;
-}
-.headerSection {
-  font-size: 95px;
-  color: white;
   text-align: center;
-  max-width: 900px;
+  margin: 30px auto;
   border: 1px solid purple;
   border-radius: 25px;
+  box-shadow: 0 0 15px 15px purple;
+  animation: headerAnimation 2s linear forwards;
 }
 main {
   color: white;
@@ -43,15 +57,14 @@ main {
   border-radius: 25px;
   box-shadow: 0 0 10px 10px purple;
   margin: 0 auto 10px;
-  max-width: 900px;
+}
+main section {
+  padding: 20px;
 }
 main section h2 {
   padding: 25px 0;
   text-align: center;
   font-size: 40px;
-}
-main section {
-  padding: 20px;
 }
 main div {
   text-align: center;
