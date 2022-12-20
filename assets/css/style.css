@@ -13,9 +13,6 @@
     font-size: 0;
     padding: 0 50px;
   }
-  50% {
-    color: red;
-  }
   100% {
     color: white;
     padding: 100px 50px;
@@ -41,19 +38,24 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.headerSection,
+main {
+  background: linear-gradient(#c33764, #1d2671);
+}
 
 .headerSection {
-  background: linear-gradient(#aa076b, #61045f);
+  /*   background: linear-gradient(#aa076b, #61045f); */
   text-align: center;
   margin: 30px auto;
   border: 1px solid purple;
   border-radius: 25px;
   box-shadow: 0 0 15px 15px purple;
   animation: headerAnimation 2s linear forwards;
+  text-shadow: 1px 3px 10px white;
 }
 main {
+  /* background: linear-gradient(#c33764, #1d2671); */
   color: white;
-  background: linear-gradient(#c33764, #1d2671);
   border-radius: 25px;
   box-shadow: 0 0 10px 10px purple;
   margin: 0 auto 10px;
